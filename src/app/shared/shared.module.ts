@@ -4,6 +4,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule( {
@@ -18,6 +20,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
         BreadcrumbsComponent,
         HeaderComponent,
         SidebarComponent
+    ],
+    imports: [
+        RouterModule,
+        CommonModule
     ]
 })
 
